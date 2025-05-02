@@ -5,6 +5,6 @@ sources:
     schema: confirmed_layer
     
     tables:
-      - name: STG_CUSTOMERS
-      - name: STG_PAYMENTS
-      - name: STG_ORDERS
+      - name: stg_customers 
+      - name: stg_payments
+      - name: stg_orders

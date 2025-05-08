@@ -9,3 +9,4 @@ sources:
       - name: stg_payments
       - name: stg_orders
       - name: products
+      - name: employees

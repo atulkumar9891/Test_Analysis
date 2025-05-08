@@ -11,7 +11,7 @@ with Pers_products as(
     select sku,
     name,
     perishable
- from {{ref('raw_supplies.csv')}}
+ from {{ref('raw_supplies')}}
 ),
 
 final_perisable as (
@@ -20,6 +20,7 @@ p.sku as id ,
 s.name as name,
 s.perishable
 from seed_supplies s 
-join Pers_products p using (sku))
+join Pers_products p using (sku) where s.perishable='TRUE'
+) 
 
 select * from final_perisable

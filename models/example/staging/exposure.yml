@@ -9,7 +9,6 @@ exposures:
 
     depends_on:
       - ref('final')
-      - ref('order_merge')
       - ref('incremental_merge')
       - ref('order_delete_insert')
       - source('datafeed_shared_schema','stg_orders')

@@ -10,3 +10,4 @@ sources:
       - name: stg_orders
       - name: products
       - name: employees
+      - name: customers

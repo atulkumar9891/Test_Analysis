@@ -42,3 +42,6 @@ models:
       +materialized: table
       example:
         +materialized: view
+snapshots:
+     +target_schema: snapshots
+

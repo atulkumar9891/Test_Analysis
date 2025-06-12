@@ -8,6 +8,16 @@ sources:
       - name: stg_customers 
       - name: stg_payments
       - name: stg_orders
+        columns:
+          - name: ID
+            tests:
+            - not_null
+            - unique
+          - name: STATUS
+            tests:
+             - accepted_values:
+                values: ['placed', 'shipped', 'completed', 'returned']
+
       - name: products
       - name: employees
       - name: customers

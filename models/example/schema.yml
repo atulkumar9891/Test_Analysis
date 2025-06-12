@@ -16,7 +16,7 @@ sources:
           - name: STATUS
             tests:
              - accepted_values:
-                values: ['placed', 'shipped', 'completed', 'returned']
+                values: ['placed', 'shipped','completed', 'returned', 'return_pending']
 
       - name: products
       - name: employees
